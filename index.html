@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMSBA</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script defer src="./script/script.js"></script>
+</head>
+<body>
+    
+
+        <main>
+                <div id="container">
+                    <h1> Submit form.
+
+                    </h1>
+                    
+                         <form action="https://httpbin.org/get" method="get">
+                        <p>
+                            <label for="firstname">firstname:</label>
+                            <input title="firstname" type="text" name="firstname" id="firstname">
+                        </p>
+                        <p>
+                            <label for="lastname">lastname:</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="lastname">
+                        </p>
+                        <p>
+                            <label for="phone">phone</label>
+                            <input type="password" name="password" id="password" placeholder="hiddenword"> 
+                        </p>
+                        <p>
+                            <label for="phone">phonenumber</label>
+                            <input type="tel" name="phone" id="phone" placeholder="enter your number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required> 
+                        </p>
+                        <p>
+                            <label for="decade">decade</label>
+                            <input type="number" name="decade" id="decade" min="1990" max="2024" step="2" value="1996"> 
+                        </p>
+                        <p>
+                            <label for="city">
+                                Cities:
+                            </label>
+                            <select name="city" id="city" multiple size="2">
+                                <option value="tacoma">Tacoma</option>
+                                <option value="lakewood">Lakewood</option>
+                                <option value="auburn">Auburn</option>
+                                <option value="federal way">Federal way</option>
+                                <option value="seattle">Seattle</option>
+                            </select>
+                        </p>
+                        
+                        <p>
+                            <label for="countries">countries</label>
+                            <input type="text" name="countries" id="countries" list="countries in cemac area">
+                            <datalist id="countries in cemac area">
+                                <option value="cameroon">
+                                <option value="tchad">
+                                <option value="REP of center africa">
+                                <option value="gabon">
+                                <option value="congo">
+                                <option value="REP  democratic of congo">
+                            </datalist>
+                        </p>
+                        <button>submit</button>
+                    </form>
+                
+                </div>
+                
+        </main>
+    </body>
+</html>
