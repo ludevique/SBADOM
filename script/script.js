@@ -33,11 +33,17 @@ function myButton(){
 btnEl.style.backgroundColor = "gold";
 
 
-
-// //my helper function
-// function subButon(){
-//     const btncontain = "";
-//     if(btncontain){}
-// }
-
+//now let add some fun interactions.
+let allElement = document.getElementById("#container");
+console.log(allElement)
+document.addEventListener("mouseover", (event)=>{
+    event.target.style.color = "green";
+    
+    //setting our runtime for the effect on the elements.
+    setTimeout(() =>{
+        event.target.style.color = "";
+    },500);
+},
+false,
+);
 
