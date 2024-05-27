@@ -38,7 +38,20 @@ let allElement = document.getElementById("#container");
 console.log(allElement)
 document.addEventListener("mouseover", (event)=>{
     event.target.style.color = "green";
-    
+    //Now that we have setted our effect let add a caple more interactions
+    //using some if statement.
+    for(let m = 1; m < allElement.length; m++){
+        if(event.target.style.color !== "green"){
+            window.alert(`this is not an input element`);
+            break
+        }else {
+            window.alert(`this is an input element`);
+            break
+        }
+    }
+
+
+
     //setting our runtime for the effect on the elements.
     setTimeout(() =>{
         event.target.style.color = "";
