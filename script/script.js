@@ -31,10 +31,18 @@ function myButton(){
 
 //give our button a color
 btnEl.style.backgroundColor = "gold";
+//append a paragraph to our body.
+//let start by creating a that element first.
+const newElement = document.createElement('p');
+newElement.textContent = 'This form althought not well done is built to help collecting data of peoples living in WA cities but coming fron center africa'
+
+const contain = document.getElementById('container')
+container.appendChild(newElement); 
+
 
 
 //now let add some fun interactions.
-let allElement = document.getElementById("#container");
+let allElement = document.getElementById("container");
 console.log(allElement)
 document.addEventListener("mouseover", (event)=>{
     event.target.style.color = "green";
